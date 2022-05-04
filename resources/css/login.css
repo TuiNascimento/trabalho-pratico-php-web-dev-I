@@ -33,6 +33,13 @@ body {
                 margin: auto;
             }
 
+        .js-error-alert {
+            border: 1px solid black;
+            background-color: red;
+            opacity: 0.8;
+            border-radius: 5%;
+        }
+
         .containerInterface {
             background-color: var(--fundo);
             border-radius:35px 5px 35px 5px;

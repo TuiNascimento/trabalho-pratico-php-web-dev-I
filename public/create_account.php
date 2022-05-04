@@ -62,38 +62,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar conta</title>
     <link rel="stylesheet" href="../resources/css/login.css">
+    <link rel="stylesheet" href="../resources/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="containerTitulo">
         <h1 class="titulo">Crie sua conta</h1>
     </div>
-    <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+    <div class="js-error-alert" style="display: none"></div>
+    <form class="js-create-account-form" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
         <div class="containerInterface" id="row">
             <div class="column">
-                <div class="container" onmousemove="focusInputLogin()">
+                <div class="container">
                     <br>
                     <label for="usuario" >Nome de usuário:</label> <br>
                     <p id="avisoUsuario" class="aviso"></p>
                     <i class="fa fa-user"></i>
-                    <input type="text" class="input" name="username" id="usuario" placeholder="Username">
+                    <input type="text" class="input js-user-input" name="username" placeholder="Username">
                 </div>
             </div>
             <div class="column">
-                <div class="container" onmousemove="focusInputPassword()">
+                <div class="container">
                     <br>
                     <label for="senha">Senha:</label><br>
                     <p class="aviso" id="avisoSenha"></p>
                     <i class="fa fa-lock"></i>
-                    <input type="password" id="senha" name="password" placeholder="*******">
+                    <input type="password" class="js-password-input" name="password" placeholder="*******">
                 </div>
             </div>
             <div class="buttonsContainer">
                 <div class="containerButtonLogin">
-                    <button type="submit" class="buttonLogin" id="buttonLogin">Criar conta</button>
+                    <button type="submit" class="buttonLogin js-submit-button" id="buttonLogin">Criar conta</button>
                 </div>
             </div>
         </div>
     </form>
 </body>
+    <script src="../resources/js/CreateAccountFormController.js"></script>
 </html>
