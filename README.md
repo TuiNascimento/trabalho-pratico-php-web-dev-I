@@ -14,3 +14,12 @@ O trabalho prático envolve a criação de uma aplicação WEB completa utilzand
  - Cada usuário possui sua própria lista.
  - Os itens podem ser adicionados, removidos e editados.
  - O usuário pode preencher o nome dos itens e quantidade. 
+
+# Prints
+- Página de login:
+![image](https://user-images.githubusercontent.com/62653479/166630865-ae2943d0-5047-4615-b8ad-8401ad570455.png)
+
+- Página principal
+  - Primeiro item em edição, segundo adicionado, e o último é o template para adição de um novo item
+  ![image](https://user-images.githubusercontent.com/62653479/166631281-ba440bf2-508f-4ee3-96f2-b620f2657342.png)
+ 
