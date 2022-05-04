@@ -6,8 +6,8 @@ O trabalho prático envolve a criação de uma aplicação WEB completa utilzand
 - Front-end
   - HTML, CSS, Javascript, Bootstrap, Jquery, FontAwesome
 - Back-end  
-  - PHP com MySQLi para conexão no banco de dados MySQL
-  - Docker para hospedar o banco de dados
+  - PHP com MySQLi para conexão no banco de dados
+  - Docker para hospedagem do MySQL
 
 # Aplicação desenvolvida 
  - A "iList" consiste em uma simples lista de compras com sistema de login e criação de conta.
