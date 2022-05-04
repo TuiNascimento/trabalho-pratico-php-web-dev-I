@@ -1,0 +1,82 @@
+body {
+    background-color: #191919;
+}
+
+.logout-button {
+    float: right;
+}
+
+.list {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    color: #C5C5C5;
+    justify-text: center;
+}
+
+.list > .title {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.alert {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    border: 1px solid #a1a1a1;
+    margin: auto;
+}
+
+.item-title {
+    grid-area: 1 / 1 / 3 / 6;
+    margin-top: 5%;
+    margin-left: 9%;
+
+}
+
+.item-quantity {
+    grid-area: 3 / 1 / 4 / 5;
+    margin-left: 10%;
+
+}
+
+.edit-button {
+    grid-area: 5 / 1 / 6 / 3;
+    justify-self: center;
+}
+
+.delete-button {
+    grid-area: 5 / 4 / 6 / 6;
+    margin-bottom: 10%;
+    justify-self: center;
+}
+
+.add-button {
+    grid-area: 4 / 5 / 4 / 2;
+    margin-bottom: 10%;
+    justify-self: center;
+}
+
+.transparent-input {
+    border: none;
+    color: #a1a1a1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
