@@ -1,0 +1,171 @@
+html {
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+:root {
+    --fundo: #1e1e1e;
+    --superficie:#363535;
+    --texto: #e1e1e1;
+    --textoleve: #a1a1a1;
+}
+body {
+    background-image: url("https://images.unsplash.com/photo-1623265300797-4a3541e29a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: middle center;
+    overflow: hidden ;
+}
+
+        .containerTitulo {
+            text-align: center;
+            margin: 7% auto;
+        }
+            .titulo {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background-color: var(--superficie);
+                width: 90%;
+                border-radius: 10px;
+                color:var(--texto);
+                opacity:0.6;
+                margin: auto;
+            }
+
+        .containerInterface {
+            background-color: var(--fundo);
+            border-radius:35px 5px 35px 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 6fr 3fr 2fr;
+            margin: 15% auto;
+            width: 482px;
+            height: 250px;
+            bottom:auto;
+            right: auto;
+            opacity: 0.9;
+            box-shadow: 0 0 4px black;
+        }
+
+            .column {
+                width: fit-content;
+                justify-self: center;
+                align-self: center;
+            }
+                .container {
+                    background-color: var(--superficie);
+                    border-radius: 8px;
+                    width: fit-content;
+                    display: inline-block;
+                    text-align: center;
+                    transition: 0.3s;
+                }
+                    .container:hover {
+                        box-shadow: 0 0 11px black;
+                        width: 100.5%;
+                    }
+
+                    label {
+                        color: var(--texto);
+                        margin-bottom: 10%;
+                    }
+
+                    .aviso {
+                        color: var(--textoleve);
+                        margin-bottom: 15%;
+                    }
+
+                    i {
+                        width: 14px;
+                        height: 14px;
+                        vertical-align: middle;
+                    }
+
+                    input {
+                        margin-bottom: 5%;
+                        margin-right: 15%;
+                        float:right;
+                        width:65%;
+                        font-size: 14px;
+                        color: black;
+                    }
+
+                    a {
+                        color: var(--textoleve);
+                        transition: 0.3s;
+                    }
+                    a:hover {
+                        color: whitesmoke;
+                    }
+                    a:hover {
+                        cursor: pointer;
+                    }
+
+            .buttonsContainer {
+                 grid-column:1/3;
+                 display:grid;
+                 margin-top: 40px;
+
+            }
+                    .containerButtonLogin {
+                        grid-column: 1/2;
+                        justify-self: center;
+                        align-self: center;
+                    }
+                    .containerButtonCancel {
+                        grid-column: 2/3;
+                        justify-self: center;
+                        align-self: center;
+                    }
+                        button {
+                        color:var(--texto);
+                        background-color: darkslategrey;
+                        border-radius: 3px;
+                        border-width: 1px 0px 1px 0px;
+                        width: 120%;
+                        font-size: 24px;
+                        opacity:0.6;
+                        transition: 0.5s;
+                        }
+                        button:hover {
+                            opacity:0.9;
+                            background-color: var(--texto);
+                            cursor:pointer ;
+                            color: var(--superficie);
+                        }
+                        :focus {
+                            outline: none ;
+                        }
+
+ @media (max-width:530px) {
+    body{
+        bottom:auto;
+        right:auto;
+        overflow: auto;
+    }
+    .containerInterface {
+        display:flex;
+        flex-direction: column;
+        height: fit-content;
+        width:70%;
+    }
+    .container {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .buttonsContainer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .containerButtonLogin {
+        margin:auto;
+        grid-column: 1/3;
+    }
+    .containerButtonCancel {
+        margin:auto;
+        margin-bottom: 10%;
+        grid-column: 1/3;
+    }
+
+}
