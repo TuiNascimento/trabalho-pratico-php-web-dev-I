@@ -25,6 +25,10 @@ body {
     margin-bottom: 5%;
 }
 
+.alert > button {
+    float: right;
+}
+
 .item {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
